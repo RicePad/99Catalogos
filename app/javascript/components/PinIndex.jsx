@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import { connect } from 'react-redux';
 import { fetchPins } from '../actions';
+import PinItems from './PinItems';
 
 
 
@@ -14,7 +16,13 @@ class PinIndex extends Component {
 		console.log('this.props', this.props.pins)
 
 		return(
-			<div>Pin Index Component</div>
+			<div>
+				{_.map(this.props.pins, pin => {
+					return(
+						<PinItems pins={pin} key={pin.id} />
+						)
+				})}
+			</div>
 			)
 	}
 }
