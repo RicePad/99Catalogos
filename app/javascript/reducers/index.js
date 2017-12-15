@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 import fetchPins from './fetch_pins_reducer';
 
 export default combineReducers({
-	fetchPins: pins
+	pins: fetchPins
 })
