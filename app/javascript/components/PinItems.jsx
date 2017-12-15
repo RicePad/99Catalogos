@@ -7,7 +7,7 @@ class PinItems extends Component{
 				<div>
 					<h2>{pins.title}</h2>
 					<h2>{pins.description}</h2>
-					<h2>{pins.thumb_image}</h2>
+					<img src={pins.thumb_image} />
 					<h2>{pins.price}</h2>
 
 
