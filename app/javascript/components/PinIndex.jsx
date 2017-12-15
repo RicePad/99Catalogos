@@ -19,7 +19,9 @@ class PinIndex extends Component {
 			<div>
 				{_.map(this.props.pins, pin => {
 					return(
-						<PinItems pins={pin} key={pin.id} />
+						<div id='pins' className="transitions-enabled" key={pin.id}>
+							<PinItems pins={pin} key={pin.id} />
+						</div>
 						)
 				})}
 			</div>

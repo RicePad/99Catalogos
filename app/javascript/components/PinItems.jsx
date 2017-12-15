@@ -5,17 +5,20 @@ class PinItems extends Component{
 		const pins = this.props.pins
 			return(
 				<div>
-					<h2>{pins.title}</h2>
-					<h2>{pins.description}</h2>
-					<img src={pins.thumb_image} />
-					<h2>{pins.price}</h2>
-
-
-
+					<div className="box panel panel-default">
+						<img src={pins.thumb_image}/>
+						<div className="panel-body">
+							{pins.description}{' '}
+							<strong>Username</strong>
+						</div>
+					</div>
 				</div>
 				)
 		}
 }
 
 
-export default PinItems
+export default PinItems;
+
+
+

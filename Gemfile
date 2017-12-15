@@ -57,5 +57,7 @@ gem 'webpacker', '~> 3.0'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
+gem 'masonry-rails', '~> 0.2.0'
+
 
 
