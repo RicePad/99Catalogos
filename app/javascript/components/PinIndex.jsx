@@ -3,13 +3,20 @@ import _ from 'lodash';
 import { connect } from 'react-redux';
 import { fetchPins } from '../actions';
 import PinItems from './PinItems';
+import $ from 'jquery'
+
 
 
 
 class PinIndex extends Component {
 	
 	componentDidMount(){
+	
+
+
 		this.props.fetchPins()
+
+		
 	}
 
 	render(){
@@ -19,7 +26,7 @@ class PinIndex extends Component {
 			<div>
 				{_.map(this.props.pins, pin => {
 					return(
-						<div  id="pins" className="transitions-enabled" key={pin.id}>
+						<div   className="pins transitions-enabled" key={pin.id}>
 							<PinItems pins={pin} key={pin.id} />
 						</div>
 						)

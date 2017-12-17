@@ -6,7 +6,8 @@
 console.log('hello pins.coffee.js')
 
 $ ->
-  $('#pins').imagesLoaded  ->
-    $('#pins').masonry
+  $('.pins').imagesLoaded  ->
+    $('.pins').masonry
       itemSelector: '.box'
       isFitWidth: true
+

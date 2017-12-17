@@ -1,3 +1,20 @@
-<div class="pin-index">
+<!-- <div class="pin-index">
+</div> -->
 
-</div>
+
+	<div  class="pins transitions-enabled">
+	  <% @pins.each do |pin| %>
+	    <div class="box panel panel-default">
+	      <%= image_tag pin.thumb_image %>
+
+	       <div class="panel-body">
+	        <%= pin.description %><br/>
+	        
+	            
+	         </div>
+	       </div>
+	    </div>
+	  <% end %>
+	</div>
+	 
+
