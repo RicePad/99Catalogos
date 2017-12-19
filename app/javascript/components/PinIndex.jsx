@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import { fetchPins } from '../actions';
 import PinItems from './PinItems';
 import $ from 'jquery'
+// import MasonryInfiniteScroller from 'react-masonry-infinite';
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
+
+
 
 
 
@@ -24,13 +28,16 @@ class PinIndex extends Component {
 
 		return(
 			<div>
+            <Masonry columnsCount={4}>
 				{_.map(this.props.pins, pin => {
 					return(
-						<div   className="pins transitions-enabled" key={pin.id}>
+						<div key={pin.id}>
 							<PinItems pins={pin} key={pin.id} />
 						</div>
 						)
 				})}
+			 </Masonry>
+
 			</div>
 			)
 	}

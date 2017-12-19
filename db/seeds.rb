@@ -3,11 +3,11 @@
 end
 
 2.times do |pin|
-	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/300x600", main_image: "http://via.placeholder.com/600x400")
+	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/200x650", main_image: "http://via.placeholder.com/600x400")
 end
 
 3.times do |pin|
-	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/300x600", main_image: "http://via.placeholder.com/600x400")
+	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/600x300", main_image: "http://via.placeholder.com/600x400")
 end
 
 1.times do |pin|
@@ -19,11 +19,11 @@ end
 end
 
 3.times do |pin|
-	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/300x600", main_image: "http://via.placeholder.com/600x400")
+	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/500x100", main_image: "http://via.placeholder.com/600x400")
 end
 
 1.times do |pin|
-	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/350x350", main_image: "http://via.placeholder.com/600x400")
+	pin = Pin.create(title: "Awesome Pin", description: "greatest pin", thumb_image: "http://via.placeholder.com/330x350", main_image: "http://via.placeholder.com/600x400")
 end
 
 2.times do |pin|
