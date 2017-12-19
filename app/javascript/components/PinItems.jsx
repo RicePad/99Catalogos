@@ -3,6 +3,7 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 
 
+
 class PinItems extends Component{
 	render(){
 		const pins = this.props.pins
