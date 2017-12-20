@@ -62,11 +62,14 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'synapse_pay_rest'
 
 # set heroku deployment for production
-group  :production do
-    gem 'pg', '~> 0.18'
-    gem 'rails_12factor'
+  group  :production do
+      gem 'pg', '~> 0.18'
+      gem 'rails_12factor'
 
-  end
+    end
+
+# Custom icons 
+gem "font-awesome-rails"
 
 
 

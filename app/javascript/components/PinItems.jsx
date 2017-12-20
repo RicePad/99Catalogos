@@ -23,11 +23,11 @@ class PinItems extends Component{
 	 		}
 	 	}
 
-	 	handleClickOutsite = (e) => {
-	    if (e.target != this.refs.profileBtn) {
-	      this.setState({displayPinPopup: false});
-	    }
-	  }
+	 	// handleClickOutsite = (e) => {
+	  //   if (e.target != this.refs.profileBtn) {
+	  //     this.setState({displayPinPopup: false});
+	  //   }
+	  // }
 
 	  componentWillMount() {
 	    window.addEventListener("click", this.handleClickOutsite, false);
@@ -42,7 +42,7 @@ class PinItems extends Component{
 	  renderPinShowPage() {
 	    return (
 	      	<div>
-	      		<PinShow />
+	      		<PinShow handleClick={this.handleClick} />
 	      	</div>
 	    );
   }
@@ -53,7 +53,7 @@ class PinItems extends Component{
 				<div>
 
 					<div className="box">
-						<img  src={pins.thumb_image} onClick={this.handleClick} ref="profileBtn" style={{width: "100%", display: "block"}} />
+						<img src={pins.thumb_image} onClick={this.handleClick} ref="profileBtn" style={{width: "100%", display: "block"}} />
 
 					        {
 					          this.state.displayPinPopup? this.renderPinShowPage() : null
