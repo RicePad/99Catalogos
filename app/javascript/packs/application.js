@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PinIndex from '../components/PinIndex';
 import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
+import PinShow from '../components/PinShow';
 
 // Redux Setup
 import { Provider } from 'react-redux'
@@ -20,6 +21,8 @@ ReactDOM.render(
 <Provider store={store(reducers)}>
 	<BrowserRouter>
 		<Switch>
+			<Route path='/pins/:id' component={PinShow} />
+			<Route path='/pins' component={PinIndex} />
 			<Route path='/' component={PinIndex} />
 		</Switch>
 	</BrowserRouter>

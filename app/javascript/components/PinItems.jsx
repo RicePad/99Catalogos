@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -11,7 +12,7 @@ class PinItems extends Component{
 				<div>
 
 					<div className="box">
-						<img src={pins.thumb_image} style={{width: "100%", display: "block"}} />
+						<Link to={`pins/1`}><img src={pins.thumb_image} style={{width: "100%", display: "block"}} /></Link>
 						<div className="panel-body">
 							{pins.description}{' '}
 							<strong>Username</strong>

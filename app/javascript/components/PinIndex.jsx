@@ -10,7 +10,6 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 
 
-
 class PinIndex extends Component {
 	
 	componentDidMount(){
