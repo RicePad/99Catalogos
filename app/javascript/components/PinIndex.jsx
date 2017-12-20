@@ -12,44 +12,31 @@ import Navbar from './Navbar';
 
 
 class PinIndex extends Component {
-	constructor(props){
-		super(props);
-
-		this.state = {
-			displayPinPopup: false
-		}
-	}
 	
-	componentDidMount(){
- 		this.props.fetchPins()
- 	}
-
-
- 	showPinPopup = () =>  {
- 		this.setState({displayPinPopup: true})
- 		console.log('this.state.showpinpu', this.state)
-
- 	}
-
- 	hidePinPopup = () => {
- 		this.setState({displayPinPopup: false})
- 	}
+		componentDidMount(){
+	 		this.props.fetchPins()
+	 	}
 
 	render(){
 		console.log('this.props', this.props.pins)
 
 		return(
 			<div>
-				 <Navbar />
-				 <Masonry columnsCount={4}>
-				{_.map(this.props.pins, pin => {
-					return(
-						<div key={pin.id}>
-							<PinItems pins={pin} key={pin.id} showPinPopup={this.showPinPopup} />
-						</div>
-						)
-				})}
-			 </Masonry>
+		   		<div>
+		   			<Navbar />	
+		   		</div>
+			   		<div className="pin-index">
+						 <Masonry columnsCount={4}>
+							{_.map(this.props.pins, pin => {
+								return(
+									<div key={pin.id}>
+										<PinItems pins={pin} key={pin.id} showPinPopup={this.showPinPopup} />
+									</div>
+									)
+							})}
+						 </Masonry>
+				   </div>
+
 
 			</div>
 			)

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import logoImg from '../assets/lilp.png';
+
 
 
 class Navbar extends Component {
@@ -35,7 +37,7 @@ class Navbar extends Component {
 
     renderLogo(){
         return (
-            <a onClick={this.showPopup} ><img src="/images/favicon.ico"/></a>
+            <img src={ logoImg } style={{ height: 40 }} />
             );
 
     }
@@ -45,7 +47,19 @@ render(){
            <section>
 
             <section className="navbar">
-                
+                        <div className="container">
+                            <div className="navbar-header">
+                                <img src={ logoImg }  style={{ height: 50 }} />    
+                            </div>
+                            <form className="navbar-form navbar-left" role="search">
+                                <div className="form-group">
+                                  <input />
+                                </div>
+                        </form>
+                        
+                        
+                    </div>
+
             </section>
 
           </section>
