@@ -12,7 +12,7 @@ class PinItems extends Component{
 				<div>
 
 					<div className="box">
-						<Link to={`pins/1`}><img src={pins.thumb_image} style={{width: "100%", display: "block"}} /></Link>
+						<Link to={`pins/1`}><img  src={pins.thumb_image} onClick={this.props.showPinPopup}style={{width: "100%", display: "block"}} /></Link>
 						<div className="panel-body">
 							{pins.description}{' '}
 							<strong>Username</strong>

@@ -3,6 +3,23 @@
 @import "bootstrap";
 
 
+
+body {
+	background-color: #bd081c;
+	
+}
+
+.navbar {
+	text-align: center;
+	padding: 10px 10px 5px;
+	background-color: #fff
+}
+
+.navbar .left-side {
+	float: left;
+}
+
+
 .center {
   text-align: center;
 }
@@ -13,6 +30,9 @@
 .box {
   margin: 5px;
   width: relative;
+  background: #fff;
 
 }
+
+
 
