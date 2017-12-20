@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { fetchPins } from '../actions';
 import PinItems from './PinItems';
 import $ from 'jquery'
-// import MasonryInfiniteScroller from 'react-masonry-infinite';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 

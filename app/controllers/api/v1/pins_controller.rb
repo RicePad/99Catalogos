@@ -6,4 +6,9 @@ class Api::V1::PinsController < ApplicationController
 		render json: @pins
 	end
 
+	def show
+		@pin = Pin.find(params[:id])
+		render json: @pin
+	end
+
 end
