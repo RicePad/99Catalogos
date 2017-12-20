@@ -11,9 +11,9 @@ class PinShow extends Component {
         <section className="popup-content post-popup">
 		<header className="post-header">
 			<div style={{  textAlign: 'left'}}>
-				<a className="fa fa-times fa-3x" aria-hidden="true" onClick={this.props.handleClick}> </a>
+				<a style={{color: '#fff'}}className="fa fa-times fa-3x" aria-hidden="true" onClick={this.props.handleClick}></a>
 			</div>
-			Post a new product
+			<h1>Post a new product</h1>
 		</header>
         <section>
           <table>
