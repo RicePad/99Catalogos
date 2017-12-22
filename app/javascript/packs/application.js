@@ -21,7 +21,7 @@ ReactDOM.render(
 <Provider store={store(reducers)}>
 	<BrowserRouter>
 		<Switch>
-			<Route path='/pins/:id' component={PinShow} />
+       	    <Route path='/pins/:id' component={PinShow} />
 			<Route path='/pins' component={PinIndex} />
 			<Route path='/' component={PinIndex} />
 		</Switch>

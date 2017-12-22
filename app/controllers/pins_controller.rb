@@ -1,5 +1,6 @@
 class PinsController < ApplicationController
-  
+  before_action :set_pin, only: [:show]
+
   def index
  	@pins = Pin.all
   end
@@ -12,10 +13,10 @@ class PinsController < ApplicationController
   private
 
   	def set_pin
-  		@pin = Pin.find(params[:id])
   	end
 
   	def pin_params
+      @pin = Pin.find(params[:id])
 
   	end
 end

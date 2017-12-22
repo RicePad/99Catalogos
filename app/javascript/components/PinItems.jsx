@@ -53,7 +53,7 @@ class PinItems extends Component{
 				<div>
 
 					<div className="box">
-						<img src={pins.thumb_image} onClick={this.handleClick} ref="profileBtn" style={{width: "100%",  borderRadius: '25px'}} />
+						<Link to={`pins/${pins.id}`}><img src={pins.thumb_image} onClick={this.handleClick} ref="profileBtn" style={{width: "100%"}} /></Link>
 
 					        {
 					          this.state.displayPinPopup? this.renderPinShowPage() : null
