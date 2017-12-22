@@ -15,26 +15,20 @@ class PinShow extends Component {
 			</div>
 			<h1>Post a new product</h1>
 		</header>
-        <section>
-          <table>
-            <tbody>
-              <tr>
-                <td>Name</td>
-                <td><input placeholder="Enter product's name"/></td>
-              </tr>
-              <tr>
-                <td>Description</td>
-                <td><input placeholder="Enter product's description"/></td>
-              </tr><tr>
-                <td>Link</td>
-                <td><input placeholder="http://www..."/></td>
-              </tr><tr>
-                <td>Media</td>
-                <td><input placeholder="Pate a direct link to an image"/></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+     <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div class="panel panel-default">
+              <div class="panel-heading center">
+               <img src='/' />
+              </div>
+              <div class="panel-body">
+                <p>description</p>
+                <p><strong>user email</strong></p> 
+                             
+              </div>
+            </div>
+          </div>
+    </div>
         </section>
        </section>
           
