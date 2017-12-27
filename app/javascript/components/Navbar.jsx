@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logoImg from '../assets/lilp.png';
+import { Link } from 'react-router-dom';
+import PinNew from './PinNew';
 
 
 
@@ -41,8 +43,11 @@ render(){
 
                                    />
                                 </div>
-                        </form>    
-                    </div>
+                           </form>
+            
+                                <Link to={'/pins/new'}><i style={{color: '#bd081c'}} className="fa fa-plus-circle fa-3x" aria-hidden="true" ></i></Link>
+                            
+                        </div>
 
             </section>
             <hr/>
