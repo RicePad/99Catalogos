@@ -35,7 +35,7 @@ render(){
                                 <div className="form-group">
                                   <input
                                     size='100'
-                                    placeholder= "search for a pin"
+                                    placeholder= "search for pin"
                                     type= "text"
                                     className="form-control"
 
