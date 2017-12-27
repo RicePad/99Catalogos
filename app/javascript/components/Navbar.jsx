@@ -4,27 +4,7 @@ import logoImg from '../assets/lilp.png';
 
 
 class Navbar extends Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
-          displayPopup: false
-
-        };
-
-
-    }
-
-
-    showPopup = () => {
-        return this.setState({displayPopup: true});
-
-    }
-
-    hidePopup = () =>{
-        return this.setState({displayPopup: false});
-    }
-
+    
     renderProductSearch(){
         return (
             <section className="left-side">
@@ -53,14 +33,19 @@ render(){
                             </div>
                             <form className="navbar-form navbar-left" role="search">
                                 <div className="form-group">
-                                  <input />
+                                  <input
+                                    size='100'
+                                    placeholder= "search for a pin"
+                                    type= "text"
+                                    className="form-control"
+
+                                   />
                                 </div>
-                        </form>
-                        
-                        
+                        </form>    
                     </div>
 
             </section>
+            <hr/>
 
           </section>
             );
