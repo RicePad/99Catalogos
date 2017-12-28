@@ -71,6 +71,10 @@ gem 'synapse_pay_rest'
 # Custom icons 
 gem "font-awesome-rails"
 
+#User authentication 
+gem 'devise'
+
+
 
 
 
