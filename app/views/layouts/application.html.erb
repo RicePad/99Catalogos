@@ -9,14 +9,16 @@
   </head>
 
   <body>
-     <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
-
+    <%= render '/shared/navbar' %>
+     
     <%= yield %>
       	
-<div class="pins">
-  <%= javascript_pack_tag 'application'%>
-</div>
+    <div class="pins">
+      <%= javascript_pack_tag 'application'%>
+    </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
 
 
       	

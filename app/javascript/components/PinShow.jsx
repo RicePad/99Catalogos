@@ -32,7 +32,7 @@ class PinShow extends Component {
               <section className="popup-content post-popup">
       		<header className="post-header">
       			<div style={{  textAlign: 'left'}}>
-      			<Link to={'/pins'}><a style={{color: '#fff'}}className="fa fa-times fa-3x" aria-hidden="true" onClick={this.props.handleClick}></a></Link>
+      			 <Link to={'/pins'}><a style={{color: '#fff'}}className="fa fa-times fa-3x" aria-hidden="true" ></a></Link>
       			</div>
       			<h1>{pin.title}</h1>
       		</header>

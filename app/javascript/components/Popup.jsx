@@ -1,20 +1,26 @@
 import React, { Component }from 'react';
 import PinNew from './PinNew';
+import PinIndex from './PinIndex';
 
 class Popup extends Component {
-
+	
 	render(){
+		
 		return(
-			<section className="popup">
+			<div>
+			<section className="popup">	
+
+			
 		        <section className="popup-wrap">
 		            
 		        </section>
-		        <section className="popup-content">
+		        <section  className="popup-content" >
 		            <section> 
-		            	<PinNew /> 
+		            	<PinNew handleClick={this.props.handleClick} /> 
 		            </section>
 		        </section>
        		</section>
+       		</div>	
            )
 			
 	}

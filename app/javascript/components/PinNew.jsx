@@ -2,28 +2,23 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Field, reduxForm } from 'redux-form'
 import { connect } from 'react-redux';
+import PinNewForm from './PinNewForm';
+
+
 
 class PinNew extends Component {
 	
 
-
-
 	render(){
 		return(
 			<div>
-				<div className="container">
-					<h1>Create a Pin</h1>
-					<form className="form-group">
-					  <div class="col-md-6">
-					    <input type="text" className="form-control" placeholder="Title" />
-					    <textarea name="message" type="text" className="form-control" placeholder="Description" />
-						<input type="text" className="form-control" placeholder="URL" />
-					  </div>
-					  <div class="col-md-6">
-					    <input type="text" className="form-control" placeholder="Upload Image" />
-
-					  </div>  
-					</form>
+				<div className="container" > 
+				<div style={{  textAlign: 'left'}}>
+      		 	 <a onClick={this.props.handleClick} style={{color: '#bd081c'}} className="fa fa-times fa-3x" aria-hidden="true" ></a>
+      				
+      			</div>
+					<h1 >Create a Pin</h1>
+						<PinNewForm />
 					<hr/>
 				</div>
 				<br/>

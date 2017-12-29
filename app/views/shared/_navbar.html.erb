@@ -1,0 +1,23 @@
+ <div class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <%= image_tag 'lilp.png', style: 'height: 50px;' %> 
+        </div>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input
+                size='100'
+                placeholder= "search for pin"
+                type= "text"
+                class="form-control"
+
+               />
+            </div>
+        </form>
+             <!--Create button add Icon component -->
+             <div class="create-button">
+                    <%= javascript_pack_tag 'add_pin'%>
+             </div>            
+    </div>
+ </di>
+ <hr/>

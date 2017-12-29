@@ -22,15 +22,20 @@ class PinIndex extends Component {
 
 		return(
 			<div>
-		   		<div>
-		   			<Navbar />	
-		   		</div>
+		   		
+
+		   		{/* 
+	  				<div>
+			   			<Navbar />
+			   		</div>
+				*/}  
+
 			   		<div className="pin-index">
 						 <Masonry columnsCount={4}>
 							{_.map(this.props.pins, pin => {
 								return(
 									<div key={pin.id}>
-										<PinItems pins={pin} key={pin.id} showPinPopup={this.showPinPopup} />
+										<PinItems pins={pin} key={pin.id} />
 									</div>
 									)
 							})}

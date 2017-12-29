@@ -43,7 +43,7 @@ class Navbar extends Component {
     renderPopup() {
         return (
             <div>
-                <Popup />
+                <Popup handleClick={this.handleClick} />
             </div>
         );
   }
@@ -86,10 +86,12 @@ class Navbar extends Component {
                                 </div>
                             </form>
                                 <a onClick={this.handleClick} ref="profileBtn" style={{color: '#bd081c'}} className="fa fa-plus-circle fa-3x" aria-hidden="true"  ></a>
-                                {
+                                 <a href='/registration'><button className="btn btn-success">Sign Up</button></a>
+
+                               { 
                                     this.state.displayPinPopup? this.renderPopup() : null
                                }
-                       
+                                
                         </div>
 
             </section>
