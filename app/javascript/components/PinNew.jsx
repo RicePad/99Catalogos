@@ -14,11 +14,11 @@ class PinNew extends Component {
 			<div>
 				<div className="container" > 
 				<div style={{  textAlign: 'left'}}>
-      		 	 <a onClick={this.props.handleClick} style={{color: '#bd081c'}} className="fa fa-times fa-3x" aria-hidden="true" ></a>
+      		 	 <a onClick={this.props.handleClick} style={{color: '#bd081c'}} className="fa fa-undo fa-3x" aria-hidden="true" ></a>
       				
       			</div>
 					<h1 >Create a Pin</h1>
-						<PinNewForm />
+						<PinNewForm  />
 					<hr/>
 				</div>
 				<br/>
