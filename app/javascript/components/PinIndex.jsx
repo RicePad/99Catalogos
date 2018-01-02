@@ -23,14 +23,14 @@ class PinIndex extends Component {
 
 		return(
 			<div>
-		   		
+	   		
 
 		   		{/* 
 	  				<div>
 			   			<Navbar />
 			   		</div>
 				*/}  
-					<div className="container">
+					<div className="container" style={{textAlign: "center"}}>
 						<AddPinButton />
 					</div>
 

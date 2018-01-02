@@ -19,6 +19,7 @@ class PinNewForm extends Component {
 					type="text"
 					className="form-control"
 					{...field.input}
+					
 				/>
 				<div className="text-danger">
 					{touched ? error : ''}

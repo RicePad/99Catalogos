@@ -1,23 +1,45 @@
+ <div class="container">
  <div class="navbar">
-    <div class="container">
-        <div class="navbar-header">
-            <%= image_tag 'lilp.png', style: 'height: 50px;' %> 
-        </div>
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input
-                size='100'
-                placeholder= "search for pin"
-                type= "text"
-                class="form-control"
-
-               />
+    
+            <div class="navbar-header">
+                <%= image_tag 'lilp.png', style: 'height: 50px;' %> 
             </div>
-        </form>
-             <!--Create button add Icon component -->
-             <div class="create-button">
-                    <%= javascript_pack_tag 'add_pin'%>
-             </div>            
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input
+                    size='100'
+                    placeholder= "search for pin"
+                    type= "text"
+                    class="form-control"
+
+                   />
+                </div>
+            </form>
+
+
+                <div> 
+                <ul class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: red;">
+
+                        <% if current_user.is_a?(User) %>       
+                            <%#= image_tag avatar_url(current_user), class: "img-circle", style: "width:40px" %>&nbsp;
+                            <%= current_user.email %> <span class="caret"></span>
+                             <ul class="dropdown-menu profile-links">
+                                 <li><%= link_to "Home", root_path %></li>
+                                 <li><%= link_to "Your Pins", root_path %></li>
+                                 <li><%= link_to "Your Profile", root_path  %></li>
+                             </ul>
+                         </a>
+                        
+
+                    <% end %>
+                    <%= login_helper %>
+                    
+                </ul>
+            
+             </div>
+    
+        </div>  
     </div>
  </di>
  <hr/>

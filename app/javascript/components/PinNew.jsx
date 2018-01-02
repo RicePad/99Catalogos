@@ -20,7 +20,9 @@ class PinNew extends Component {
 				<input 
 					type="text"
 					className="form-control"
+					placeholder={field.placeholder}
 					{...field.input}
+
 				/>
 				<div className="text-danger">
 					{touched ? error : ''}
@@ -46,28 +48,35 @@ class PinNew extends Component {
 				<div style={{  textAlign: 'left'}}>
       			 <Link to={'/pins'}><a onClick={this.props.handleClick} style={{color: '#bd081c'}} className="fa fa-undo fa-3x" aria-hidden="true" ></a></Link>
       			</div>
-					<h1 >Create a Pin</h1>
+					<h1 style={{textAlign: 'center'}}>Create a Pin</h1>
 					<hr/>
 					<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 				<Field
 					label="Title of Pin"
 					name="title"
 					component={this.renderField}
+					placeholder="Title of pin"
 				 />
 				 <Field
 					label="Description"
 					name="description"
 					component={this.renderField}
+					placeholder="Description of pin"
+
 				 />
 				 <Field
 					label="Thumb Image"
 					name="thumb_image"
 					component={this.renderField}
+					placeholder="Upload main image"
+
 				 />
 				 <Field
 					label="Main Image"
 					name="main_image"
 					component={this.renderField}
+					placeholder="Upload thumb image"
+
 				 />
 				 <button type="submit" className="btn btn-success btn-block">Submit</button>
 
