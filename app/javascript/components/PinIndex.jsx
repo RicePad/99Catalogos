@@ -35,7 +35,7 @@ class PinIndex extends Component {
 					</div>
 
 			   		<div className="pin-index">
-						 <Masonry columnsCount={4}>
+						 <Masonry columnsCount={4} style={{borderRadius: '50px'}}>
 							{_.map(this.props.pins, pin => {
 								return(
 									<div key={pin.id}>

@@ -34,7 +34,7 @@ class PinNew extends Component {
 
 	onSubmit(values){
 		this.props.createPin(values, () => {
-        	this.props.history.push('/');
+        	this.props.history.push('/pins');
         })
 		console.log(values)
 	}
