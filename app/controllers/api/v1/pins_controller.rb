@@ -8,7 +8,7 @@ class Api::V1::PinsController < ApplicationController
 	end
 
 	def create
-		@pin = current_user.pins.new(pin_params)
+		@pin = current_user.pins.create(pin_params)
 		render json: @pin
 	end
 
