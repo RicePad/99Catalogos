@@ -27,6 +27,33 @@
 	margin-left: 850px;
 }
 
+.trydemo-btn {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* start da css for da buttons */
+.trydemo-btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  
+}
+
+.trydemo-btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+  margin-left: 45%;
+}
 .banner {
 	width: 100%;
 	margin-bottom: 20px;
@@ -127,17 +154,14 @@
 	font-size: 13px;
 	width: 100%;
 }
-
+	
 
 
 /*PIN NEW STYLE FORM */
 
 input, textarea {
      border:0; outline:0;
-     padding: 1em;
-     display: block;
-     width: 100%;
-     margin-top: 1em;
+    
      font-family: 'Merriweather', sans-serif;
 }
 

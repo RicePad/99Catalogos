@@ -1,0 +1,12 @@
+<%= form_for(:user, :url =>  new_user_session_path) do |f| %>
+  <% if Rails.env.production? %>
+    <%= f.email_field :email, :placeholder => "Email", autofocus: true, :value => "admin@example.com", :style => "display:none", :required => true %>
+    <%= f.password_field :password, :placeholder => "Password",  autocomplete: "off", :value => "fuckyou123", :class => "input-style", :style => "display:none; " %>
+  <% else %> 
+    <%= f.email_field :email, :placeholder => "Email", autofocus: true, :value => "admin@example.com", :style => "display:none", :required => true %>
+    <%= f.password_field :password, :placeholder => "Password",  autocomplete: "off", :value => "fuckyou123", :class => "input-style", :style => "display:none; " %>
+  <% end %>
+    <div class="container" >
+    	<%= f.submit "Try Live Demo", :class => "trydemo-btn red"%>
+    </div>
+<% end %>

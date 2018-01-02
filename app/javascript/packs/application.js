@@ -25,7 +25,7 @@ ReactDOM.render(
 			<Route path='/pins/new' component={PinNew} />
 			<Route path='/pins/:id' component={PinShow} />
 			<Route path='/pins' component={PinIndex} />
-			<Route path='/' component={PinIndex} />
+		
 		</Switch>
 	</BrowserRouter>
 </Provider>

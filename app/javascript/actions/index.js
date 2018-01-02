@@ -3,8 +3,7 @@ export const FETCH_PINS = "FETCH_PINS";
 export const FETCH_SHOW_PIN = "FETCH_SHOW_PIN";
 export const CREATE_PIN = "CREATE_PIN";
 
-// const ROOT_URL = "http://localhost:5000/api/v1/pins"
-const ROOT_URL = "https://rice-printerest.herokuapp.com/api/v1/pins"
+const ROOT_URL = "http://localhost:5000/api/v1/pins"
 
 
 
