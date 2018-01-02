@@ -22,9 +22,7 @@ class PinNew extends Component {
 					<hr/>
 				</div>
 				<br/>
-				<div className="col-md-12">
-					<button className="btn btn-danger btn-block">Submit</button>
-				</div>
+				
 			</div>	
 		)}}
 
