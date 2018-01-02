@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
+import { Link } from 'react-router-dom';
+import PinNew from './PinNew';
+
 
 
 
@@ -22,6 +25,7 @@ class AddPinButton extends Component {
     }
 
 
+// PopUsage
     renderPopup() {
         return (
             <div>
@@ -31,14 +35,17 @@ class AddPinButton extends Component {
   }
 
 
+
 	render(){
 		return(
 				<div>
-					<a onClick={this.handleClick} ref="profileBtn" style={{color: '#bd081c'}} className="fa fa-plus-circle fa-3x" aria-hidden="true"  ></a>
-					{
-	                    this.state.displayPinPopup? this.renderPopup() : null
+					<Link to={'pins/new'}><a onClick={this.handleClick} ref="profileBtn" style={{color: '#bd081c'}} className="fa fa-plus-circle fa-3x" aria-hidden="true"  ></a></Link>
+					
+                {/* {
+                        this.state.displayPinPopup? this.renderPinNew() : null
                                
                     }
+                */}  
 				</div>
 
 

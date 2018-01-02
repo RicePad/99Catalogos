@@ -1,6 +1,8 @@
 import React, { Component }from 'react';
 import PinNew from './PinNew';
 import PinIndex from './PinIndex';
+import { Link } from 'react-router-dom';
+
 
 class Popup extends Component {
 	

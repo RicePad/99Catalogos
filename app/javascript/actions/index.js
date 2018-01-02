@@ -27,13 +27,11 @@ export function showPin(id){
 }
 
 export function createPin(values, callback){
-	const request = axios.post(`${ROOT_URL}`, values)
+    const request = axios.post(`${ROOT_URL}`, values) 
     	.then(() => callback());
-
-
-		return {
-			type: CREATE_PIN,
-			payload: request
-		}
-
-}
+     
+     return {
+         type: CREATE_PIN,
+         payload: request
+         
+     }}

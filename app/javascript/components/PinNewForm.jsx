@@ -1,6 +1,7 @@
 import React, { Component }from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { createPin } from '../actions';
 
 class PinNewForm extends Component {
@@ -29,14 +30,11 @@ class PinNewForm extends Component {
 	
 
 	onSubmit(values){
-		this.props.createPin(values, () =>{
-        	this.props.history.push('/pins');
-		})
-
+		this.props.createPin(values, () => {
+        	this.props.history.push('/');
+        })
 		console.log(values)
 	}
-
-
 	render(){
 		const { handleSubmit } = this.props;
 		return(

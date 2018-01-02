@@ -6,6 +6,7 @@ import PinItems from './PinItems';
 import $ from 'jquery'
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 import Navbar from './Navbar';
+import AddPinButton from './AddPinButton';
 
 
 
@@ -29,6 +30,9 @@ class PinIndex extends Component {
 			   			<Navbar />
 			   		</div>
 				*/}  
+					<div className="container">
+						<AddPinButton />
+					</div>
 
 			   		<div className="pin-index">
 						 <Masonry columnsCount={4}>
