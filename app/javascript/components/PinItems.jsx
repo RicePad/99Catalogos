@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PinShow from './PinShow';
+
+
+
 
 class PinItems extends Component{
+	
+
 	render(){
 		const pins = this.props.pins
 			return(
 				<div>
-					<h2>{pins.title}</h2>
-					<h2>{pins.description}</h2>
-					<h2>{pins.thumb_image}</h2>
-					<h2>{pins.price}</h2>
 
+					<div className="box">
+						<Link to={`pins/${pins.id}`}><img src={pins.thumb_image} style={{width: "100%"}} /></Link>
 
+					        
+						<div className="panel-body">
+							{pins.description}{' '}
+							<strong>Username</strong>
+						</div>
+					</div>
 
 				</div>
 				)
@@ -18,4 +29,7 @@ class PinItems extends Component{
 }
 
 
-export default PinItems
+export default PinItems;
+
+
+

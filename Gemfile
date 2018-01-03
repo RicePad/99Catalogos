@@ -55,3 +55,32 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'webpacker', '~> 3.0'
 
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-rails'
+
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'synapse_pay_rest'
+
+# set heroku deployment for production
+  group  :production do
+      gem 'pg', '~> 0.18'
+      gem 'rails_12factor'
+
+    end
+
+# Custom icons 
+gem "font-awesome-rails"
+
+#User authentication 
+gem 'devise'
+
+#File uploader Integration 
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+
+
+
+
+
+
