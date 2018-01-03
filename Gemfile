@@ -74,6 +74,11 @@ gem "font-awesome-rails"
 #User authentication 
 gem 'devise'
 
+#File uploader Integration 
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+
 
 
 

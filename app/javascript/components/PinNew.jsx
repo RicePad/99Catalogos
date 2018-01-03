@@ -16,7 +16,7 @@ class PinNew extends Component {
 		return(
 
 			<div className={className}>
-				<label>{field.label}</label>
+				<label style={{color: '#bd081c' }}>{field.label}</label>
 				<input 
 					type="text"
 					className="form-control"
@@ -46,41 +46,43 @@ class PinNew extends Component {
 			<div>
 				<div className="container" > 
 				<div style={{  textAlign: 'left'}}>
-      			 <Link to={'/pins'}><a onClick={this.props.handleClick} style={{color: '#bd081c'}} className="fa fa-undo fa-3x" aria-hidden="true" ></a></Link>
+      			 <Link to={'/pins'}><a onClick={this.props.handleClick} style={{color: '#bd081c'}} className="fa fa-times fa-3x" aria-hidden="true" ></a></Link>
       			</div>
-					<h1 style={{textAlign: 'center'}}>Create a Pin</h1>
-					<hr/>
-					<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-				<Field
-					label="Title of Pin"
-					name="title"
-					component={this.renderField}
-					placeholder="Title of pin"
-				 />
-				 <Field
-					label="Description"
-					name="description"
-					component={this.renderField}
-					placeholder="Description of pin"
+					<h1 style={{textAlign: 'center', color: '#bd081c'}}>Create a Pin</h1>
+					<section className="demo-content">
+						<form  className="form-grid" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+							<Field
+								label="Title of Pin"
+								name="title"
+								component={this.renderField}
+								placeholder="Title of pin"
 
-				 />
-				 <Field
-					label="Thumb Image"
-					name="thumb_image"
-					component={this.renderField}
-					placeholder="Upload main image"
+							 />
+							 <Field
+								label="Description"
+								name="description"
+								component={this.renderField}
+								placeholder="Description of pin"
 
-				 />
-				 <Field
-					label="Main Image"
-					name="main_image"
-					component={this.renderField}
-					placeholder="Upload thumb image"
+							 />
+							 <Field
+								label="Thumb Image"
+								name="thumb_image"
+								component={this.renderField}
+								placeholder="Upload main image"
 
-				 />
-				 <button type="submit" className="btn btn-success btn-block">Submit</button>
+							 />
+							 <Field
+								label="Main Image"
+								name="main_image"
+								component={this.renderField}
+								placeholder="Upload thumb image"
 
-			</form>
+							 />
+							 <button type="submit" className="btn btn-danger btn-block">Submit</button>
+
+					</form>
+				</section>
 				</div>
 				<br/>
 				

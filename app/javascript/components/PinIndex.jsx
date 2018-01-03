@@ -35,6 +35,7 @@ class PinIndex extends Component {
 					</div>
 
 			   		<div className="pin-index">
+			   		 <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
 						 <Masonry columnsCount={4} style={{borderRadius: '50px'}}>
 							{_.map(this.props.pins, pin => {
 								return(
@@ -44,6 +45,7 @@ class PinIndex extends Component {
 									)
 							})}
 						 </Masonry>
+					</ResponsiveMasonry>
 				   </div>
 
 

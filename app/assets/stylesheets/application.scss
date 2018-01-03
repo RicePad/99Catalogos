@@ -68,7 +68,7 @@
 .box {
   margin: 5px;
   width: relative;
-  background: #fff;
+  background: #DCDCDC;
   border-radius: 15px;
 
 
@@ -156,13 +156,26 @@
 
 /*PIN NEW STYLE FORM */
 
-input, textarea {
-     border:0; outline:0;
-    
-     font-family: 'Merriweather', sans-serif;
-}
 
  textarea {
       height: 150px;
   }
+
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.demo-content {
+  margin-bottom: 1rem;
+  background: #fff;
+  padding: 2rem;
+}
+
+.form-grid {
+  max-width: 600px;
+  margin: 0 auto;}
+  
+  
 
