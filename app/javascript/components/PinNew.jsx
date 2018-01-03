@@ -32,6 +32,31 @@ class PinNew extends Component {
 			)
 	}
 
+
+
+	renderFileField(field){
+		
+
+
+		return(
+
+			<div>
+				<label style={{color: '#bd081c' }}>{field.label}</label>
+				<input 
+					type="file"
+					className="form-control"
+					placeholder={field.placeholder}
+					 value={value === '' && value}
+
+					{...field.input}
+
+				/>
+				
+			</div>
+
+			)
+	}
+
 	onSubmit(values){
 		this.props.createPin(values, () => {
         	this.props.history.push('/pins');
