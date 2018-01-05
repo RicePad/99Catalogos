@@ -3,6 +3,11 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { createPin } from '../actions';
+import Dropzone from 'react-dropzone';
+
+const FILE_FIELD_NAME = 'files';
+
+ 
 
 
 class PinNew extends Component {
@@ -34,10 +39,10 @@ class PinNew extends Component {
 
 
 
+
+
+
 	renderFileField(field){
-		
-
-
 		return(
 
 			<div>
@@ -63,6 +68,28 @@ class PinNew extends Component {
         })
 		console.log(values)
 	}
+
+	renderDropzoneInput = (field) => {
+	const files = field.input.value;
+	return(
+			<div>
+				<Dropzone
+					name={field.name}
+					onDrop={(filesToUpload, e) => field.input.onChange(filesToUpload)}
+				>
+					<div>Try dropping some files here, or click to selects file to upload.</div>
+				</Dropzone>
+				{field.meta.touched &&
+			        field.meta.error &&
+			        <span className="error">{field.meta.error}</span>}
+			      {files && Array.isArray(files) && (
+			        <ul>
+			          { files.map((file, i) => <li key={i}>{file.name}</li>) }
+			        </ul>
+			      )}
+			</div>
+		)
+}
 
 	render(){
 		const { handleSubmit } = this.props;
@@ -93,15 +120,15 @@ class PinNew extends Component {
 							 <Field
 								label="Thumb Image"
 								name="thumb_image"
-								component={this.renderField}
-								placeholder="Upload main image"
+								component={this.renderDropzoneInput}
+								placeholder="Upload thumb image"
 
 							 />
 							 <Field
 								label="Main Image"
 								name="main_image"
-								component={this.renderField}
-								placeholder="Upload thumb image"
+								component={this.renderDropzoneInput}
+								placeholder="Upload main image"
 
 							 />
 							 <button type="submit" className="btn btn-danger btn-block">Submit</button>
