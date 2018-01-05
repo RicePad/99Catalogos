@@ -13,7 +13,10 @@ class PinShowPageDetails extends Component {
 	                <div className="col-md-offset-2 col-md-8">
 	                  <div className="panel panel-default">
 	                    <div className="panel-heading center">
-	                     <img src={pin.main_image} />
+	                     <img 
+	                     	src={pin.main_image.url}
+	                     	style={{width: '700px;', height: '350px'}}
+	                      />
 	                    </div>
 	                    <div className="panel-body">
 	                      <h2>{pin.title}</h2>

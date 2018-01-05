@@ -14,6 +14,7 @@
 
                    />
                 </div>
+
             </form>
 
 
@@ -25,14 +26,17 @@
                             <%#= image_tag avatar_url(current_user), class: "img-circle", style: "width:40px" %>&nbsp;
                             <%= current_user.email %> <span class="caret"></span>
                              <ul class="dropdown-menu profile-links">
-                                 <li><%= link_to "Home", root_path %></li>
+                                 <li><%= link_to "Home", pins_path %></li>
                                  <li><%= link_to "Your Pins", root_path %></li>
-                                 <li><%= link_to "Your Profile", root_path  %></li>
+                                 <li><%= link_to "Your Profile", edit_user_registration_path  %></li>
                              </ul>
                          </a>
+                         <%= link_to '', create_pin_path, class: "fa fa-plus-circle fa-3x", style: "color: #bd081c" %>
                         
+                    <% end %>   
 
-                    <% end %>
+
+
                     <%= login_helper %>
                       
 

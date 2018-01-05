@@ -14,7 +14,9 @@ class PinItems extends Component{
 				<div>
 
 					<div className="box">
-						<Link to={`pins/${pins.id}`}><img src={pins.thumb_image} style={{width: "100%"}} /></Link>
+						<Link to={`pins/${pins.id}`}>
+							<img src={pins.thumb_image.url} alt={pins.name} style={{width: "100%"}} />
+						</Link>
 
 					        
 						<div className="panel-body">

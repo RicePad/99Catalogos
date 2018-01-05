@@ -31,7 +31,7 @@ class PinIndex extends Component {
 			   		</div>
 				*/}  
 					<div className="container" style={{textAlign: "center"}}>
-						<AddPinButton />
+						{/* <AddPinButton /> */}
 					</div>
 
 			   		<div className="pin-index">
