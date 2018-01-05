@@ -1,7 +1,7 @@
 class Pin < ApplicationRecord
 	belongs_to :user
 
-	validates_presence_of :title, :description, :thumb_image, :main_image
+	validates_presence_of :title, :description
 
 
 	# Uncomment when deploying to production
