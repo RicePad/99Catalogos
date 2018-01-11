@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { createPin } from '../actions';
-import Dropzone from 'react-dropzone';
+// import Dropzone from 'react-dropzone';
 
 const FILE_FIELD_NAME = 'files';
 
