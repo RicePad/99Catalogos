@@ -1,0 +1,13 @@
+<%= form_tag(pins_path, method: :get, class: "form-inline", role: 'search') do %>
+  <div class="input-group">              
+    <%= text_field_tag :term, 
+        params[:term], 
+        autocomplete: :off, 
+        placeholder: 'Search', 
+        class: 'form-control' %>
+    <div class="input-group-btn search-panel">
+      <%= link_to 'Clear', allpins_path, class: "btn btn-default" %>
+      <%= submit_tag 'Search', name: nil, class: "btn btn-default" %>
+    </div>
+  </div>
+<% end %>

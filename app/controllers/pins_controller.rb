@@ -4,7 +4,12 @@ class PinsController < ApplicationController
   before_action :set_pin, only: [:show]
 
   def index
- 	  @pins = Pin.all.order("created_at DESC")
+    search = params[:term].present? ? params[:term] : nil
+    @pins = if search
+      Pin.search(search, fields: [:title, :description])
+    else
+      @pins = Pin.all.order("created_at DESC")
+    end
   end
 
   def show
