@@ -29,6 +29,16 @@ class PinsController < ApplicationController
     end
   end
 
+  def autocomplete
+    render json: Pin.search(params[:query], {
+      fields: ["title^5", "description"],
+      match: :word_start,
+      limit: 10,
+      load: false,
+      misspellings: {below: 5}
+    }).map(&:title)
+  end
+
   private
 
   	def set_pin

@@ -1,8 +1,10 @@
 <%= form_tag(pins_path, method: :get, class: "form-inline", role: 'search') do %>
   <div class="input-group">              
     <%= text_field_tag :term, 
-        params[:term], 
-        autocomplete: :off, 
+        params[:term],
+        id: 'pins_search', 
+        autocomplete: :off,
+        size: '100', 
         placeholder: 'Search', 
         class: 'form-control' %>
     <div class="input-group-btn search-panel">

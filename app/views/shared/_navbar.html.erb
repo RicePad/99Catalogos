@@ -4,10 +4,17 @@
             <div class="navbar-header">
                 <%= image_tag 'lilp.png', style: 'height: 50px;' %> 
             </div>
-            <%= render 'pins/search_bar'%>
+           
+
+            <div class="col-md-10">
+                <%= render 'pins/search_bar'%>
+                <%= link_to '', create_pin_path, class: "fa fa-plus-circle fa-3x", style: "color: #bd081c" %>
+
+            </div>
 
 
-                <div> 
+               
+            <div> 
                 <ul class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: red;">
 
@@ -20,7 +27,6 @@
                                  <li><%= link_to "Your Profile", edit_user_registration_path  %></li>
                              </ul>
                          </a>
-                         <%= link_to '', create_pin_path, class: "fa fa-plus-circle fa-3x", style: "color: #bd081c" %>
                         
                     <% end %>   
 
@@ -33,7 +39,6 @@
                 </ul>
             
              </div>
-    
         </div>  
     </div>
  </di>
