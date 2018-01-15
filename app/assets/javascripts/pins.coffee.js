@@ -11,3 +11,6 @@ $(document).on('turbolinks:load', function(){
     source: pins
   });
 })
+
+
+
