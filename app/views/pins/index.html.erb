@@ -1,18 +1,17 @@
-<div id="pins" class="transitions-enabled">
-  <% @pins.each do |pin| %>
-    <div class="box panel panel-default">
-      <%= image_tag pin.thumb_image unless pin.thumb_image.nil? %>
-
-       <div class="panel-body">
-        <%= pin.description %><br/>
-        <% if pin.user == current_user %>
-          <!-- <div class="actions">
-             <%= link_to edit_pin_path(pin) do %>
-               <span class="glyphicon glyphicon-edit"></span> Edit -->
-            <%end%>
-         </div>
-        <% end %>
-       </div>
+<% @pins.each do |pin| %>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= image_tag pin.thumb_image %>
     </div>
-  <% end %>
-</div>
+    <div class="caption">
+      <p> <%= pin.description %></p>
+      
+      
+       <span><strong><%= link_to "by RicePad", pin_path(pin.id) %></strong></span>
+       <b class="green pull-right"> $4</b>
+
+      </p>
+       
+    </div>
+  </div>
+<% end %>

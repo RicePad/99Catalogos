@@ -5,8 +5,8 @@ class Pin < ApplicationRecord
 
 	# Uncomment when deploying to production
 	
-	mount_uploader :thumb_image, PinUploader
-	mount_uploader :main_image, PinUploader
+	# mount_uploader :thumb_image, PinUploader
+	# mount_uploader :main_image, PinUploader
 
 
 	def search_data
