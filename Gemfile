@@ -81,7 +81,7 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'searchkick'
 
 
-gem 'masonry-rails', '~> 0.2.0'
+# gem 'masonry-rails', '~> 0.2.0'
 
 
 
