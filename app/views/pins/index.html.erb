@@ -1,7 +1,7 @@
 <% @pins.each do |pin| %>
   <div class="col-md-3">
     <div class="thumbnail">
-      <%= image_tag pin.thumb_image, style:'width: 350px; height: 350px' %>
+      <%= image_tag (pin.thumb_image unless pin.thumb_image.nil?), style:'width: 350px; height: 350px' %>
     </div>
     <div class="caption">
       <p> <%= pin.description %></p>
