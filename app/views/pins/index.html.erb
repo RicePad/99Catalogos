@@ -1,14 +1,14 @@
 <% @pins.each do |pin| %>
   <div class="col-md-3">
     <div class="thumbnail">
-      <%= image_tag pin.thumb_image %>
+      <%= image_tag pin.thumb_image, style:'width: 350px; height: 350px' %>
     </div>
     <div class="caption">
       <p> <%= pin.description %></p>
       
       
        <span><strong><%= link_to "by RicePad", pin_path(pin.id) %></strong></span>
-       <b class="green pull-right"> $4</b>
+      
 
       </p>
        

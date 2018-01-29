@@ -15,7 +15,7 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require typeahead.bundle
-//= require masonry/jquery.masonry
+
 
 //= require_tree .
 
