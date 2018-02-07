@@ -79,8 +79,8 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 
 #Search functionality  
 gem 'searchkick'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
+# gem 'elasticsearch-model'
+# gem 'elasticsearch-rails'
 
 
 # gem 'masonry-rails', '~> 0.2.0'

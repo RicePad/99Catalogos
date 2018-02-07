@@ -23,7 +23,7 @@
     @pin = current_user.pins.new(pin_params)
 
     if @pin.save 
-        redirect_to pins_path, notice: 'Pin has been created!'
+        redirect_to allpins_path, notice: 'Pin has been created!'
     else
         render :new
     end
